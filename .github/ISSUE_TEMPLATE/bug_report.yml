@@ -7,7 +7,7 @@ body:
     attributes:
       value: |
         Thanks for the report. Billing, license key and refund questions do not belong here: use the
-        [support form](https://uncannyoffice.app/support) instead, so you can tell us the email you paid with.
+        [support form](https://uncannyoffice.dev/support) instead, so you can tell us the email you paid with.
   - type: textarea
     id: what-happened
     attributes:

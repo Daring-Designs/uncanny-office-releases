@@ -7,7 +7,7 @@ body:
     attributes:
       value: |
         Thanks for the idea. Billing, license key and refund questions do not belong here: use the
-        [support form](https://uncannyoffice.app/support) instead.
+        [support form](https://uncannyoffice.dev/support) instead.
   - type: textarea
     id: problem
     attributes:
