@@ -1,0 +1,51 @@
+name: Feature request
+description: An idea for something Uncanny Office should do.
+title: "[Feature] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the idea. Billing, license key and refund questions do not belong here: use the
+        [support form](https://uncannyoffice.app/support) instead.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do?
+      description: The task or situation, not the solution yet. What gets in your way today?
+      placeholder: When I have five sessions going I lose track of which one is waiting on me because ...
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What would you like to happen?
+      description: How you imagine it working in the app.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: What do you do instead right now?
+      description: Workarounds, or other tools that handle this well.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Which part of the app?
+      multiple: true
+      options:
+        - The office (sprites, desks, workers)
+        - Terminals and sessions
+        - Jobs and schedules
+        - Menu bar and notifications
+        - Devices and pairing
+        - Updates and install
+        - Something else
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before you post
+      options:
+        - label: I searched the open issues and nobody has asked for this yet.
+        - label: This is not a billing, license key or refund question.
+          required: true

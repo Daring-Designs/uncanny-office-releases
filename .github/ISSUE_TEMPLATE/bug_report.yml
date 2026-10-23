@@ -1,0 +1,68 @@
+name: Bug report
+description: Something in Uncanny Office is broken or behaves wrong.
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the report. Billing, license key and refund questions do not belong here: use the
+        [support form](https://uncannyoffice.app/support) instead, so you can tell us the email you paid with.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What did you do, what did you expect, and what happened instead?
+      placeholder: I clicked ... and expected ..., but ...
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open ...
+        2. Click ...
+        3. See ...
+  - type: input
+    id: version
+    attributes:
+      label: Uncanny Office version
+      description: Settings → ABOUT in the app.
+      placeholder: "0.1.11"
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      options:
+        - macOS (Apple silicon)
+        - Windows
+        - Linux
+    validations:
+      required: true
+  - type: input
+    id: os-version
+    attributes:
+      label: OS version and distribution
+      placeholder: "macOS 26.0, Windows 11 24H2, Ubuntu 24.04"
+  - type: input
+    id: claude-version
+    attributes:
+      label: Claude Code version
+      description: Run `claude --version` in a terminal.
+      placeholder: "2.1.0"
+  - type: textarea
+    id: logs
+    attributes:
+      label: Error text or screenshots
+      description: Paste any error message you saw. Screenshots can be dragged in. Please remove anything private first.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before you post
+      options:
+        - label: I searched the open issues and this is not already reported.
+        - label: This is not a billing, license key or refund question.
+          required: true
